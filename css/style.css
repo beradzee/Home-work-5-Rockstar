@@ -1,0 +1,411 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+}
+
+/* base codes */
+.d-flex {
+    display: flex;
+}
+.a-center {
+    align-items: center;
+}
+.j-center {
+    justify-content: center;
+}
+.p-absolute {
+    position: absolute;
+}
+:root {
+    --btn-color: rgba(252, 175, 23, 1);
+    --btn2-color: rgba(90, 90, 90, 1);
+    --black-text: black;
+    --text2-color: rgba(246, 246, 246, 1);
+}
+/* HEADER -----------------==-------------- -------------------
+-------------------------- ------------------------------------------
+_----------------------------- ----------------------------
+_-------------------------------- ------------------------
+----------------------------- -------------------------------*/
+
+header {
+    max-width: 1440px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.h-container {
+    width: 1160px;
+    justify-content: space-between;
+    align-items: center;
+}
+/* H-DIV 1 ------- */
+.h-div1 {
+    width: 285px;
+    justify-content: space-between;
+}
+.logo {
+    height: 54px;
+    width: 54px;
+}
+.h-ul {
+    width: 185px;
+    justify-content: space-between;
+}
+.h-li {
+    font-weight: 500;
+    letter-spacing: -1.1%;
+}
+/* H-DIV 2------ */
+.h-div2 {
+    width: 352px;
+    justify-content: space-between;
+}
+.h-button {
+    width: 193px;
+    height: 52px;
+    background-color: var(--btn-color);
+    color: var(--black-text);
+    border-radius: 8px;
+}
+.b-box {
+    width: 120px;
+    justify-content: space-between;
+}
+.h-button p {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1.1%;
+    line-height: 30px;
+}
+.b-box-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--btn2-color);
+}
+
+/* MAIN ------------------------------------- -------------------
+---------------------------------------------------
+-------------------------------------------------
+------------------------------------------------------------
+------------------------------ */
+main {
+    width: 1440px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.banner {
+    max-width: 1440px;
+    height: 796px;
+}
+.banner-1{
+    max-width: 1440px;
+    height: 796px;
+}
+
+/* section 1 ---------===============
+====================================
+==============================
+========================-- */
+
+.section1 {
+    width: 1160px;
+    height: 554px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -1.1%;
+}
+.s-top {
+    width: 100%;
+    justify-content: space-between;
+}
+.s-top-box {
+    width: 404px;
+    justify-content: space-between;
+}
+.s-top-box li {
+    background-color: var(--btn2-color);
+    padding: 4px 24px;
+    border-radius: 100px;
+    font-weight: 500;
+    color: var(--text2-color);
+    height: 25px;
+}
+
+/* mid  -- */
+
+.s-mid {
+    margin-top: 40px;
+    width: 1160px;
+    height: 316px;
+    justify-content: space-between;
+}
+.s-mid img {
+    width: 260px;
+    height: 316px;
+    border-radius: 16px;
+}
+
+.s-btn {
+    width: 260px;
+    height: 63px;
+    background-color: var(--btn-color);
+    border-radius: 8px;
+    color: var(--black-text);
+    margin-top: auto;
+}
+.s-btn p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: -1.1%;
+}
+
+/* section 2 --------------------------------------
+--------------------------------------------
+-------------------------------------------------
+-----------------------------------------------------
+------------------------------------------ */
+
+.section2 {
+    margin-top: 112px; 
+
+    width: 1160px;
+}
+.grid-container {
+    display: grid;
+    height: 520px;
+    grid-template-columns: 860px 260px;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+
+}
+.grid-item {
+    border-radius: 16px;
+}
+.grid-item1 {
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+.grid-item2 {
+
+    position: relative;
+
+}
+.grid-item3 {
+    position: relative;
+
+    grid-column-start: 2;
+
+}
+.grid-item-div {
+    width: 860px;
+    height: 136px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+.grid-item-div h5 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -1.1%;
+}
+.grid-item-div-2 {
+    background-color: black;
+    position: absolute;
+    height: 82px;
+    bottom: 0;
+    border-radius: 0 0 16px 16px;
+    padding: 8px 12px 0 12px;
+}
+.grid-item-div-2 h5 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: -1.1%;
+}
+.grid-item-div-2 p {
+    font-weight: 300;
+    font-size: 12px;
+    color: rgba(121, 121, 121, 1);
+    line-height: 18px;
+    margin-top: 4px;
+}
+.inner-box {
+    width: 329px;
+    height: 108px;
+    border: dashed 1px rgba(151, 71, 255, 1);
+    position: absolute;
+    left: 12px;
+    top: 56px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.inner-box p {
+    color: rgba(121, 121, 121, 1);
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: -1.1%;
+    width: 293px;
+}
+
+/* SECTION 3 ================================
+=======================================================
+==============================================
+===========================================
+==================================================== */
+
+.section3 {
+    margin-top: 80px;
+    background-color: yellow;
+    width: 1160px;
+    height: 535px;
+    background-image: url("../img/fundo.png");
+    border-radius: 16px;
+    position: relative;
+}
+.section3-div img{
+    width: 137.65px;
+    height: 126.75;
+}
+.section3 h2 {
+    width: 186px;
+    font-size: 41.57px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: -1.1%;
+    color: var(--black-text);
+
+}
+.section3-div {
+    top: 77px;
+    left: 76px;
+    width: 342px;
+    justify-content: space-between;
+}
+.todos {
+    width: 326px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -1.1%;
+    color: var(--black-text);
+    top: 235px;
+    left: 76px;
+}
+.section3-btn {
+    width: 260px;
+    height: 63px;
+    background-color: var(--btn-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 395px;
+    left: 76px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.32);
+
+}
+.section3-btn p {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -1.1%;
+    color: var(--black-text);
+}
+.L-img {
+    width: 660px;
+    height: 471px;
+    top: 32px;
+    right: 0;
+}
+
+
+/* FOOTER +============================
+=============================================
+======================================================
+=====================================================
+========================= */
+
+footer {
+    margin-top: 95px;
+    width: 1440px;
+    height: 238px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.f-container {
+    width: 1160px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.f-logo {
+    width: 60px;
+    height: 55.25px;
+
+}
+
+.f-left-div {
+    width: 355px;
+    margin-left: 40px;
+}
+.f-left-div ul {
+    width: 355px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
+    color: rgba(177, 177, 177, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -1.1%;
+}
+.f-left-div p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 19.5px;
+    letter-spacing: -1.1%;
+    color: rgba(177, 177, 177, 1);
+}
+
+/* right box ======== */
+
+.f-right-div {
+    width: 246px;
+    height: 24px;
+    justify-content: space-between;
+}
+.f-right-div img {
+    width: 24px;
+    height: 24px;
+}
